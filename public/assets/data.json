@@ -1,0 +1,65 @@
+{
+    "profile": {
+      "name": "Gulshan Sethi",
+      "designation": "Frontend Developer",
+      "location": "Seawood, Navi Mumbai",
+      "email": "gulshanjain043@gmail.com",
+      "phone": "7083304872",
+      "image": "assets/photo.jpg",
+      "skills": [
+        {"name": "HTML", "level": "90"},
+        {"name": "CSS", "level": "80"},
+        {"name": "JavaScript", "level": "75"},
+        {"name": "Angular", "level": "70"}
+      ],
+      "languages": [
+        {"name": "English", "level": "90"},
+        {"name": "Hindi", "level": "100"},
+        {"name": "Marathi", "level": "80"}
+      ]
+    },
+    "experience": [
+      {
+        "title": "Front End Developer",
+        "company": "AxionixTech",
+        "from": "Jan 2024",
+        "to": "Current",
+        "description": "Developed a responsive and visually appealing portfolio website using Angular, showcasing projects, skills, and experience with an optimized UI/UX for better user engagement"
+      },
+      {
+        "title": "Web Developer",
+        "company": "Aprionix",
+        "from": "Aug 2024",
+        "to": "Current",
+        "description": "Developed a task management app using Angular and JSON API, enabling users to add, edit, delete, and organize tasks with drag-and-drop and due date reminders."
+      },
+      {
+        "title": "Frontend Developer",
+        "company": "InternsElite",
+        "from": "Oct 2023",
+        "to": "Dec 2023",
+        "description": "Developed a scalable eCommerce app using Angular and Bootstrap, featuring user authentication, product management, cart functionality, and a responsive, user-friendly interface."
+      }
+    ],
+    "education": [
+      {
+        "institution": "Dr. Bababsaheb Ambedakar Marathwada University (CH. SAMBHAJINAGAR)",
+        "degree": "Bachelor Degree",
+        "from": "2020",
+        "to": "2024"
+      },
+      {
+        "institution": "Maharashtra State Board (CH. SAMBHAJINAGAR)",
+        "degree": "HSC (12th)",
+        "from": "2019",
+        "to": "2020"
+      },
+      {
+        "institution": "Maharashtra State Board (CH. SAMBHAJINAGAR)",
+        "degree": "SSC (10th)",
+        "from": "2019",
+        "to": "2020"
+      }
+    ]
+  }
+  
