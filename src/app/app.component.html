@@ -18,7 +18,7 @@
                         <p class="ps-3"><i class="fa-solid fa-house-chimney"></i> {{profileData?.location}}</p>
                         <p class="ps-3"><i class="fa-solid fa-phone"></i> {{profileData?.phone}}</p>
                     </header>
-                    <section class="skills p-3">
+                    <section class="skills px-3">
                         <h5 class="mb-3">Skills</h5>
                         <article *ngFor="let skill of profileData.skills">
                             <p class="mb-2">{{skill.name}}</p>
@@ -27,8 +27,8 @@
                         </div>
                         </article>
                     </section>
-                    <section class="languages p-3">
-                        <h5 class="mb-3">Languages</h5>
+                    <section class="languages p-3 pb-0">
+                        <h5 class="mb-2">Languages</h5>
                         <article *ngFor="let language of profileData.languages">
                             <p class="mb-2">{{language.name}}</p>
                         <div class="progress mb-3" role="progressbar" aria-label="Example with label" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
@@ -40,7 +40,7 @@
             </section>
             
         <!-- ---------------------------------------- experience section ---------------------------------------- -->
-            <div class="col-12 col-sm-8 col-md-8">
+            <div class="col-12 col-sm-8 col-md-8 pb-0">
                 <section class="work-experience container mt-4 ms-0">
                     <header class="d-flex align-items-center mb-2">
                         <i class="fa-solid fa-suitcase"></i>
@@ -59,7 +59,7 @@
                 </section>
 
         <!-- ---------------------------------------- education section ---------------------------------------- -->
-                <section class="education container mt-4 ms-0">
+                <section class="education container mt-4 ms-0 pb-0">
                     <header class="d-flex align-items-center mb-4">
                         <i class="fas fa-graduation-cap fa-2x"></i>
                         <h2 class="ms-3">Education</h2>
