@@ -63,6 +63,25 @@ export class AppComponent implements OnInit {
     this.applyTheme();
   }
 
+  trackBySkill(index: number, skill: { name: string; level: number }) {
+    return skill.name; // or use a unique ID if available
+  }
+
+  trackByLanguage(index: number, language: { name: string; level: number }) {
+    return language.name;
+  }
+
+  trackByExperience(index: number, data: { title: string; company: string }) {
+    return data.title + data.company; // Unique combination
+  }
+
+  trackByEducation(
+    index: number,
+    data: { institution: string; degree: string }
+  ) {
+    return data.institution + data.degree;
+  }
+
   toggleDarkMode() {
     this.isDarkMode = !this.isDarkMode;
     this.applyTheme();
