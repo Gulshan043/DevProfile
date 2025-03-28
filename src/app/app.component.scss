@@ -248,7 +248,7 @@ body {
   }
   .display {
     .name {
-      font-size: 5vmax !important;
+      font-size: 3vmax !important;
     }
   }
 }
@@ -264,6 +264,14 @@ body {
       height: 30px;
       border-radius: 30px !important;
     }
+}
+
+@media (max-width: 992px){
+  .display{
+    .name{
+    font-size: 2vmax;
+    }
+}
 }
 
 @media(max-width:1400px){
