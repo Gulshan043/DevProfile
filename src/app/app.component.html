@@ -7,11 +7,11 @@
     </div>
         <div class="row">
         <!-- ---------------------------------------- profile section ---------------------------------------- -->
-            <section *ngIf="profileData" class="col-12 col-sm-4 col-md-4 profile-card container mt-5 me-0">
+            <section *ngIf="profileData" class="col-12 col-sm-4 col-md-4 profile-card d-flex align-items-center justify-content-center container mt-5 me-0">
                 <div class="card shadow-sm">
                     <header class="profile-header">
                         <div class="display">
-                            <img src="assets/photo.png" width="400" height="300" alt="Profile Picture" class="img-fluid" loading="eager">
+                            <img src="assets/photo.WebP" width="400" height="300" alt="Profile Picture" class="img-fluid" loading="eager">
                             <h2 class="name ps-3">{{profileData?.name}}</h2>
                         </div>
                         <p class="ps-3 mt-3"><i class="fa-solid fa-briefcase"></i> {{profileData?.designation}}</p>
@@ -47,33 +47,33 @@
                         <h2 class="ms-3">Work Experience</h2>
                     </header>
                 
-                    <article *ngFor="let data of experienceData" class="job my-3">
+                    <article *ngFor="let data of experienceData; let last = last" class="job mt-5">
                         <h5>{{data.title}} / <span>{{data.company}}</span></h5>
                         <p class="text-muted">
                             <i class="fa-solid fa-calendar-days me-3"></i> 
                             <span class="date mb-4 fw-bolder">{{data.from + " - "}} <span [ngClass]="{'badge bg-success': data.to === 'Current'}">{{data.to}}</span></span>
                         </p>
                         <p>{{data.description}}</p>
+                        <hr *ngIf="!last">
                     </article>
-                    <hr>
                 </section>
 
         <!-- ---------------------------------------- education section ---------------------------------------- -->
-                <section class="education container mt-4 ms-0 pb-0">
+                <section class="education container my-4 ms-0 pb-0">
                     <header class="d-flex align-items-center mb-4">
                         <i class="fas fa-graduation-cap fa-2x"></i>
                         <h2 class="ms-3">Education</h2>
                     </header>
                 
-                    <article *ngFor="let data of educationData" class="edu">
+                    <article *ngFor="let data of educationData; let last = last" class="edu pb-2">
                         <h5>{{data.institution}}</h5>
                         <p class="text-muted">
                             <i class="fa-solid fa-calendar-days me-3"></i> 
                             <span class="text-primary">{{data.from + " - " + data.to}}</span>
                         </p>
                         <p>{{data.degree}}</p>
+                        <hr *ngIf="!last">
                     </article>
-                    <hr>
                 </section>
             </div>
         </div>

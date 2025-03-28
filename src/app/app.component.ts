@@ -23,7 +23,6 @@ export class AppComponent implements OnInit {
       this.profileData = data.profile;
       this.experienceData = data.experience;
       this.educationData = data.education;
-      console.log(this.experienceData)
     });
 
     // Check for saved theme preference or use system preference
@@ -31,7 +30,9 @@ export class AppComponent implements OnInit {
     if (savedTheme) {
       this.isDarkMode = savedTheme === 'dark';
     } else {
-      this.isDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches;
+      this.isDarkMode = window.matchMedia(
+        '(prefers-color-scheme: dark)'
+      ).matches;
     }
     this.applyTheme();
   }

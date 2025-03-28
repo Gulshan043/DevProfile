@@ -1,0 +1,10 @@
+@font-face {
+    font-family: "CustomFont";
+    src: url("/assets/fonts/custom.woff2") format("woff2");
+    font-display: swap;
+  }
+  
+  body {
+    font-family: "CustomFont", sans-serif;
+  }
+  

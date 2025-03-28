@@ -31,7 +31,7 @@ body {
 }
 
 .col-12.col-sm-8.col-md-8 {
-  min-height: 300px !important; // Adjust based on your layout
+  min-height: 300px !important;
 }
 
 
@@ -111,7 +111,6 @@ body {
   }
 }
 
-// Rest of your existing SCSS remains the same, but replace hardcoded colors with variables
 .profile-card {
   max-width: 400px;
   margin: auto;
@@ -200,7 +199,7 @@ body {
   }
 
   hr {
-    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    border-top: 2px solid rgba(0, 0, 0, 0.441);
   }
 }
 
@@ -238,7 +237,7 @@ body {
   }
 
   hr {
-    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    border-top: 2px solid rgba(0, 0, 0, 0.359) !important;
     margin: 15px 0;
   }
 }
@@ -265,4 +264,16 @@ body {
       height: 30px;
       border-radius: 30px !important;
     }
+}
+
+@media(max-width:1400px){
+  .skills{
+    margin: 20px 0px;
+    article{
+      margin: 10px 0;
+    }
+  }
+  .languages{
+    margin: 10px 0px;
+  }
 }
