@@ -19,7 +19,7 @@
                         <p class="ps-3"><i class="fa-solid fa-phone"></i> {{profileData?.phone}}</p>
                     </header>
                     <section class="skills px-3">
-                        <h5 class="mb-3">Skills</h5>
+                        <h5 class="mb-3"><i class="fa-solid fa-star-of-life"></i> Skills</h5>
                         <article *ngFor="let skill of profileData.skills">
                             <p class="mb-2">{{skill.name}}</p>
                         <div class="progress" role="progressbar" aria-label="Example with label" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
@@ -28,7 +28,7 @@
                         </article>
                     </section>
                     <section class="languages p-3 pb-0">
-                        <h5 class="mb-2">Languages</h5>
+                        <h5 class="mb-2"><i class="fa-solid fa-earth-americas"></i> Languages</h5>
                         <article *ngFor="let language of profileData.languages">
                             <p class="mb-2">{{language.name}}</p>
                         <div class="progress mb-3" role="progressbar" aria-label="Example with label" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">

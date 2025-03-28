@@ -34,7 +34,6 @@ body {
   min-height: 300px !important;
 }
 
-
 .theme-toggle {
   position: fixed;
   top: 20px;
@@ -43,7 +42,7 @@ body {
 
   button {
     background-color: $light-primary-color;
-    color: #EAE6E6;
+    color: #eae6e6;
     border: none;
     border-radius: 20px;
     padding: 5px 15px;
@@ -130,12 +129,27 @@ body {
         bottom: 1%;
         color: white;
       }
+
       img {
         width: 100%;
         object-fit: cover;
         aspect-ratio: 4 / 3;
       }
     }
+    
+    .fa-solid{
+      color:$light-primary-color !important;
+    }
+  }
+
+  .skills {
+    margin-top: 20px;
+    article {
+      margin: 20px 0;
+    }
+  }
+  .languages {
+    margin: 20px 0px;
   }
 
   h5 {
@@ -253,35 +267,44 @@ body {
   }
 }
 
-@media (max-width: 768px){
-    .display{
-        .name{
-        font-size: 3vmax;
-        }
+@media (max-width: 768px) {
+  .display {
+    .name {
+      font-size: 3vmax;
     }
+  }
 
-    .progress{
-      height: 30px;
-      border-radius: 30px !important;
-    }
+  .progress {
+    height: 30px;
+    border-radius: 30px !important;
+  }
 }
 
-@media (max-width: 992px){
-  .display{
-    .name{
-    font-size: 2vmax;
+@media (max-width: 992px) {
+  .display {
+    .name {
+      font-size: 2vmax;
     }
-}
-}
-
-@media(max-width:1400px){
-  .skills{
+  }
+  .skills {
+    margin: 25px 0px;
+    article {
+      margin: 20px 0;
+    }
+  }
+  .languages {
     margin: 20px 0px;
-    article{
+  }
+}
+
+@media (max-width: 1400px) {
+  .skills {
+    margin: 20px 0px;
+    article {
       margin: 10px 0;
     }
   }
-  .languages{
+  .languages {
     margin: 10px 0px;
   }
 }
