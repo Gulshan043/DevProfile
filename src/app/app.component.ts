@@ -10,7 +10,6 @@ import { Meta, Title } from '@angular/platform-browser';
   styleUrl: './app.component.scss',
 })
 export class AppComponent implements OnInit {
-  title = 'DevProfile';
   isDarkMode = false;
 
   profileData: any;
@@ -26,7 +25,7 @@ export class AppComponent implements OnInit {
   }
 
   setMetaTags() {
-    this.Title.setTitle('Your Name - Resume');
+    this.Title.setTitle('DevProfile');
 
     this.meta.updateTag({
       name: 'description',
