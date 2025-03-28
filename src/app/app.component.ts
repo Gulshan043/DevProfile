@@ -1,6 +1,7 @@
 import { CommonModule } from '@angular/common';
 import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
+import { Meta, Title } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-root',
@@ -16,7 +17,33 @@ export class AppComponent implements OnInit {
   experienceData: any;
   educationData: any;
 
-  constructor(private http: HttpClient) {}
+  constructor(
+    private http: HttpClient,
+    private meta: Meta,
+    private Title: Title
+  ) {
+    this.setMetaTags();
+  }
+
+  setMetaTags() {
+    this.Title.setTitle('Your Name - Resume');
+
+    this.meta.updateTag({
+      name: 'description',
+      content:
+        'Professional resume of Gulshan Sethi showcasing skills, experience, and projects.',
+    });
+
+    this.meta.updateTag({
+      name: 'keywords',
+      content: 'resume, web developer, Angular, frontend, portfolio',
+    });
+
+    this.meta.updateTag({
+      name: 'author',
+      content: 'Gulshan Sethi',
+    });
+  }
 
   ngOnInit() {
     this.http.get('assets/data.json').subscribe((data: any) => {
